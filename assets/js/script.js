@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Validate form inputs
       if (validateForm()) {
         // Send form data using EmailJS
-        emailjs.send("service_09cwszt", "template_q4fbk9e", {
+        emailjs.send("service_19lv7je", "template_x2y0u8b", {
           fullname: fullnameInput.value,
           email: emailInput.value,
           message: messageInput.value
