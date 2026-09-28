@@ -1884,3 +1884,28 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* ---- added: availability badge & skill tags ---- */
+.open-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 10px; padding: 3px 10px; border-radius: 20px;
+  font-size: var(--fs-8); color: #7ee2a8;
+  background: rgba(46, 204, 113, 0.12); border: 1px solid rgba(46, 204, 113, 0.35);
+}
+.open-badge .dot {
+  width: 7px; height: 7px; border-radius: 50%; background: #2ecc71;
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+@keyframes pulse-dot { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+@media (min-width: 1250px) { .open-badge { margin: 10px auto 0; } .info-content { text-align: center; } }
+
+.skill-groups { display: grid; gap: 20px; }
+.skill-group .h5 { color: var(--white-2); margin-bottom: 10px; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-tags li {
+  padding: 5px 12px; border-radius: 8px; font-size: var(--fs-7);
+  color: var(--light-gray); background: var(--onyx); border: 1px solid var(--jet);
+  transition: var(--transition-1);
+}
+.skill-tags li:hover { color: var(--orange-yellow-crayola); border-color: var(--orange-yellow-crayola); }
+@media (min-width: 580px) { .skill-groups { grid-template-columns: 1fr 1fr; } }
