@@ -351,6 +351,9 @@ main {
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
+  max-width: 100%;
+  text-align: center;
+  line-height: 1.5;
   padding: 3px 12px;
   border-radius: 8px;
 }
